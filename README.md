@@ -38,6 +38,8 @@ The features are variables, including mean (indicated by _mean()_) and standard 
  fBodyGyroMag  
  fBodyGyroJerkMag  
  
+e.g. the feature named _tBodyAcc-mean()-Z_, is the mean of signal _tBodyAcc_ on _Z_ axis.
+ 
 ### Processing Data
 #### Tidy data set: data1
 Load all data sets into R
@@ -169,6 +171,7 @@ It has 68 columns and 10299 rows. Column names are:
 * fBodyGyroMag-std
 * fBodyGyroJerkMag-std
 
+e.g. the feature named _tBodyAcc-mean-Z_, is the mean of signal _tBodyAcc_ on _Z_ axis.
 Each row is a 66-feature vector for the corresponding subject and activity.
 
 
