@@ -84,7 +84,7 @@ All the steps can be done by one line:
 data1<-rbind(cbind(cbind(subject_train,y_train),X_train),cbind(cbind(subject_test,y_test),X_test))
 ```
 
-Then we look at the names of the new data set and use `grep()` to decide whether they are mean or standard deviation variables. **Extracts only the measurements on the mean and standard deviation for each measurement** by following code
+Then we look at the names of the new data set and use `grep()` to decide whether they are mean or standard deviation variables. Basically we are looking for those names with either _mean()_ or _std()_ inside. **Extracts only the measurements on the mean and standard deviation for each measurement** by following code
 ```{r}
 meanorstd<-c(grep("mean()", features[[2]],fixed=TRUE,value=TRUE),grep("std()", features[[2]],fixed=TRUE,value=TRUE))
 ```
